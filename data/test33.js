@@ -55,6 +55,10 @@ test("runs the challenge function 100 times", () => {
     }
 })
 
+test("test number2", () => {
+    expect(number2.foo).toEqual("7")
+});
+
 test("perform vector operations", () => {
     const vec = new Vector([3, 5, 7]);
     const vec2 = new Vector([66, 64, 62]);

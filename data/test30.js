@@ -1,7 +1,6 @@
 import { expect, test } from "vitest"
 import {
     challenge,
-    number2,
     Vector,
 } from "./challenge.js"
 
@@ -27,7 +26,6 @@ function isPrime(num) {
 }
 
 test("runs the challenge function 100 times", () => {
-    let _42Vec = null
     for (let i = 0; i < 100; ++i) {
         const out = challenge();
 
@@ -53,6 +51,7 @@ test("runs the challenge function 100 times", () => {
             expect(out).toEqual(42);
         }
     }
+
 })
 
 test("perform vector operations", () => {
