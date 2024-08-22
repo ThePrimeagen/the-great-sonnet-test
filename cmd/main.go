@@ -22,6 +22,7 @@ type RunResults struct {
     RunCount int
     ClaudeTotalOutput []string
     Language string
+    TestFile string
 }
 
 func (r *RunResults) Save() {
@@ -36,7 +37,7 @@ func (r *RunResults) Push(result string) {
     r.ClaudeTotalOutput = append(r.ClaudeTotalOutput, result)
 }
 
-func NewRunResults(lang string) *RunResults {
+func NewRunResults(lang string, test string) *RunResults {
     countBytes, err := os.ReadFile("./data/count")
     if err != nil {
         slog.Error("could not read data count", "err", err)
@@ -49,12 +50,21 @@ func NewRunResults(lang string) *RunResults {
         os.Exit(1)
     }
 
+    fileBytes, err := os.ReadFile(test)
+    if err != nil {
+        slog.Error("could not read test file", "err", err)
+        os.Exit(1)
+    }
+
+    file := string(fileBytes)
+
     exports := getExports(lang)
     testRunner := getTestRunner(lang)
 
     prompt := strings.ReplaceAll(SYSTEM, "__LANGUAGE__", lang)
     prompt = strings.ReplaceAll(prompt, "__EXPORT__", exports)
     prompt = strings.ReplaceAll(prompt, "__TEST_RUNNER__", testRunner)
+    prompt = strings.ReplaceAll(prompt, "__TEST_FILE__", file)
 
     return &RunResults{
         Count: count,
@@ -62,6 +72,7 @@ func NewRunResults(lang string) *RunResults {
         RunCount: 0,
         ClaudeTotalOutput: []string{},
         Language: lang,
+        TestFile: file,
     }
 }
 
@@ -130,6 +141,9 @@ but valid __LANGUAGE__ code, NO MARKDOWN, NO JSON, NO XML, JUST CODE
 DO NOT HALLUCINATE
 
 YOU SHALL WRITE ALL OF THE CODE
+
+Here is the test file's exact contents:
+__TEST_FILE__
 `
 
 func run(ctx context.Context, claude *ai.ClaudeSonnet, name string, args []string, timeout int, output string) (*CommandResults, string) {
@@ -203,11 +217,14 @@ func main() {
     language := "JavaScript"
 	flag.StringVar(&language, "lang", "JavaScript", "the language of the code")
 
+    testFileStr := ""
+	flag.StringVar(&testFileStr, "tf", "", "the test file that is ran")
+
     timeout := 5
 	flag.IntVar(&timeout, "timeout", 5, "the amonut of seconds to wait for claude sonnet")
 	flag.Parse()
 
-    runResults := NewRunResults(language)
+    runResults := NewRunResults(language, testFileStr)
     defer runResults.Save()
 
 	args := flag.Args()

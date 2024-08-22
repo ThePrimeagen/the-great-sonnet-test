@@ -1,0 +1,131 @@
+export function challenge(input) {
+  if (input % 3 === 0 && input % 5 === 0) {
+    return "FizzBuzz";
+  } else if (input % 3 === 0) {
+    return "Fizz";
+  } else if (input % 5 === 0) {
+    return "Buzz";
+  } else {
+    return input.toString();
+  }
+}
+---------------------------------------
+export function challenge(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else if (num % 5 === 0) {
+        return "Buzz";
+    } else {
+        return num;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else if (num % 5 === 0) {
+        return "Buzz";
+    } else {
+        return num;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return number;
+    }
+}
+---------------------------------------
+export function challenge(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else if (num % 5 === 0) {
+        return "Buzz";
+    } else {
+        return num;
+    }
+}

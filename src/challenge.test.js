@@ -5,8 +5,19 @@ import {
 
 test("runs the challenge function 100 times", () => {
     for (let i = 0; i < 100; ++i) {
-        const out = challenge(i);
         const expected = i % 10 == 0 ? 69 : 42;
+
+
+
+
+
+
+
+
+
+
+
+        const out = challenge(i);
         expect(out).toEqual(expected);
     }
 })

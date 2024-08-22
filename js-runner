@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+go run cmd/main.go --tf src/challenge.test.js --lang JavaScript --output src/challenge.js --timeout 30 ./js
+
+
