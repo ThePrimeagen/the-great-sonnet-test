@@ -1,0 +1,120 @@
+➜  the-great-sonnet-test git:(08-22-working_product) ✗ go run cmd/main.go --lang Golang --output pkg/challenge/challenge.go --timeout 30 ./run
+Running Claude
+2024/08/22 10:52:17 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 8ms
+
+   × runs the challenge function 100 times
+
+     → expected 42 to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed (1)
+
+   Start at  10:52:17
+
+   Duration  237ms (transform 18ms, setup 0ms, collect 13ms, tests 8ms, environment 0ms, prepare 71ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+AssertionError: expected 42 to deeply equal 69
+
+
+- Expected
++ Received
+
+- 69
++ 42
+
+
+ ❯ src/challenge.test.js:10:21
+
+      8|         const out = challenge(i);
+      9|         const expected = i % 10 == 0 ? 69 : 42;
+     10|         expect(out).toEqual(expected);
+       |                     ^
+     11|     }
+     12| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: package main
+
+func challenge(i int) int {
+    if i%10 == 0 {
+        return 69
+    }
+    return 42
+}
+Running Claude
+2024/08/22 10:52:20 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 5ms
+
+   × runs the challenge function 100 times
+
+     → expected 42 to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:52:20
+
+   Duration  205ms (transform 20ms, setup 0ms, collect 11ms, tests 5ms, environment 0ms, prepare 52ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+AssertionError: expected 42 to deeply equal 69
+
+
+- Expected
++ Received
+
+- 69
++ 42
+
+
+ ❯ src/challenge.test.js:10:21
+
+      8|         const out = challenge(i);
+      9|         const expected = i % 10 == 0 ? 69 : 42;
+     10|         expect(out).toEqual(expected);
+       |                     ^
+     11|     }
+     12| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+

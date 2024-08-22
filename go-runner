@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+go run cmd/main.go --lang Golang --output pkg/challenge/challenge.go --timeout 30 ./go
+

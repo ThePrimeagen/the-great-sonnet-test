@@ -1,0 +1,7 @@
+FAIL	command-line-arguments [build failed]
+
+FAIL
+
+# command-line-arguments_test [command-line-arguments.test]
+pkg/challenge/challenge_test.go:12:36: cannot convert i (variable of type int) to type challenge.Challenge
+

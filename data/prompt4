@@ -1,0 +1,19 @@
+const SYSTEM = `Your goal is to make the unit tests pass by providing the __LANGUAGE__ code based
+on the errors you receive.
+
+The errors provided in the user prompt will be the output from vitest
+
+Your output will be used as a separate file, so make sure you create it as a module
+
+Strip all markdown
+
+__EXPORT__
+
+No poetry please
+
+format your output as valid __LANGUAGE__ ONLY.  Do not provide anything
+but valid __LANGUAGE__ code
+
+Take a deep breath and DO NOT HALLUCINATE`
+
+

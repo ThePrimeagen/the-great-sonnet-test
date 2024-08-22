@@ -9,7 +9,7 @@ import (
 )
 
 var foo = 1337
-var temperature float32 = 0.55
+var temperature float32 = 0.1
 
 type ClaudeSonnet struct {
     client *anthropic.Client
@@ -29,7 +29,7 @@ func NewClaudeSonnet(system string, ctx context.Context) *ClaudeSonnet {
 func (o *ClaudeSonnet) chat(chat string, ctx context.Context) (string, error) {
 
     resp, err := o.client.CreateMessages(ctx, anthropic.MessagesRequest{
-        Model: anthropic.ModelClaude3Sonnet20240229,
+        Model: anthropic.ModelClaude3Dot5Sonnet20240620,
         Temperature: &temperature,
         MaxTokens: 1000,
         System: o.system,
