@@ -26,11 +26,17 @@ type RunResults struct {
 }
 
 func (r *RunResults) Save() {
+    suffix := ".js"
+    if r.Language == "Golang" {
+        suffix = ".go"
+    }
+
     count := r.Count
     os.WriteFile("./data/count", []byte(fmt.Sprintf("%d", r.Count + 1)), 0644)
     os.WriteFile(fmt.Sprintf("./data/prompt%d", count), []byte(r.Prompt), 0644)
-
     os.WriteFile(fmt.Sprintf("./data/output%d", count), []byte(strings.Join(r.ClaudeTotalOutput, "\n---------------------------------------\n")), 0644)
+    os.WriteFile(fmt.Sprintf("./data/final%d%s", count, suffix), []byte(r.ClaudeTotalOutput[len(r.ClaudeTotalOutput)-1]), 0644)
+    os.WriteFile(fmt.Sprintf("./data/test%d%s", count, suffix), []byte(r.TestFile), 0644)
 }
 
 func (r *RunResults) Push(result string) {
@@ -80,20 +86,22 @@ type CommandResults struct {
     Stdout []string
     Stderr []string
     Code int
+    previous string
 }
 
 func (c *CommandResults) String() string {
     out := strings.Join(c.Stdout, "\n")
     err := strings.Join(c.Stderr, "\n")
 
-    return fmt.Sprintf("%s\n%s\n", out, err)
+    return fmt.Sprintf("%s\n%s\nPrevious Solution:\n%s\n", out, err, c.previous)
 }
 
-func NewCommandResults(ctx context.Context, name string, args []string, wait *sync.WaitGroup) *CommandResults {
+func NewCommandResults(ctx context.Context, name string, args []string, wait *sync.WaitGroup, previous string) *CommandResults {
     res := CommandResults{
         Code: -1,
         Stdout: []string{},
         Stderr: []string{},
+        previous: previous,
     }
 
     cmdr := cmd.NewCmder(name, ctx).
@@ -146,12 +154,12 @@ Here is the test file's exact contents:
 __TEST_FILE__
 `
 
-func run(ctx context.Context, claude *ai.ClaudeSonnet, name string, args []string, timeout int, output string) (*CommandResults, string) {
+func run(ctx context.Context, claude *ai.ClaudeSonnet, name string, args []string, timeout int, output string, previous string) (*CommandResults, string) {
     wait := sync.WaitGroup{}
     wait.Add(1)
 
     fmt.Printf("Running Claude\n")
-    res := NewCommandResults(ctx, name, args, &wait)
+    res := NewCommandResults(ctx, name, args, &wait, previous)
     wait.Wait()
 
     fmt.Printf("Test Runner(%d): %s\n", res.Code, res.String())
@@ -235,11 +243,13 @@ func main() {
 
     count := 0
     success := false
+    previous := ""
     for range 11 {
         count++
-        res, claudeOutput := run(ctx, claude, name, args, timeout, outputFile)
+        res, claudeOutput := run(ctx, claude, name, args, timeout, outputFile, previous)
         runResults.RunCount = count
         runResults.Push(claudeOutput)
+        previous = claudeOutput
 
         if res.Code == 0 {
             success = true
