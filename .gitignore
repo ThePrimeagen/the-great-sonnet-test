@@ -1,2 +1,4 @@
+out
+err
 .env
 node_modules

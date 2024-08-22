@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
-	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -20,6 +19,13 @@ type CommandResults struct {
     Stdout []string
     Stderr []string
     Code int
+}
+
+func (c *CommandResults) String() string {
+    out := strings.Join(res.Stdout, "\n")
+    err := strings.Join(res.Stderr, "\n")
+
+    return fmt.Printf("%s\n%s\n", out, err)
 }
 
 func NewCommandResults(ctx context.Context, name string, args []string, wait *sync.WaitGroup) CommandResults {
@@ -67,14 +73,18 @@ Take a deep breath and DO NOT HALLUCINATE`
 func run(ctx context.Context, claude *ai.ClaudeSonnet, name string, args []string, timeout int, output string) {
     wait := sync.WaitGroup{}
     wait.Add(1)
+
+    fmt.Printf("Running Claude\n")
     res := NewCommandResults(ctx, name, args, &wait)
+    wait.Wait()
 
     fmt.Printf("Claude test run exit %d\n", res.Code)
     if res.Code == 0 {
         return
     }
 
-    out, err := claude.ReadWithTimeout(strings.Join(res.Stderr, "\n"), time.Second * time.Duration(timeout))
+    out, err := claude.ReadWithTimeout(res.String(), time.Second * time.Duration(timeout))
+    fmt.Printf("Claude response: %s\n", out)
     if err != nil {
         slog.Error("received error from claude", "err", err)
         os.Exit(1)
