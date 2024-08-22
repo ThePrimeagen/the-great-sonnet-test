@@ -1,0 +1,1163 @@
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗ go run cmd/main.go --output src/challenge.js --timeout 30 ./run
+Running Claude
+Test Runner(0):
+
+
+Running Claude
+2024/08/22 10:21:46 ERROR cmdr.Run err="exit status 1"
+2024/08/22 10:21:46 ERROR cmdr.Run err="exit status 1"
+Test Runner(0):
+
+
+Running Claude
+^Csignal: interrupt
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗ go run cmd/main.go --output src/challenge.js --timeout 30 ./run
+Running Claude
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 4ms
+
+   × runs the challenge function 100 times
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:21
+
+   Duration  224ms (transform 21ms, setup 0ms, collect 13ms, tests 4ms, environment 0ms, prepare 69ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+2024/08/22 10:23:21 ERROR cmdr.Run err="exit status 1"
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:23 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 5ms
+   × runs the challenge function 100 times
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed (1)
+
+   Start at  10:23:23
+   Duration  240ms (transform 11ms, setup 0ms, collect 10ms, tests 5ms, environment 0ms, prepare 62ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:26 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 4ms
+
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed (1)
+
+   Start at  10:23:25
+
+   Duration  242ms (transform 12ms, setup 0ms, collect 12ms, tests 4ms, environment 0ms, prepare 61ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:27 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 3ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:27
+
+   Duration  213ms (transform 24ms, setup 0ms, collect 8ms, tests 3ms, environment 0ms, prepare 76ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:29 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 3ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:29
+
+   Duration  314ms (transform 29ms, setup 0ms, collect 12ms, tests 3ms, environment 0ms, prepare 104ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:31 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 4ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  10:23:30
+
+   Duration  203ms (transform 16ms, setup 0ms, collect 7ms, tests 4ms, environment 0ms, prepare 55ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:32 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 3ms
+
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  10:23:32
+
+   Duration  212ms (transform 19ms, setup 0ms, collect 8ms, tests 3ms, environment 0ms, prepare 68ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:34 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 5ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:34
+   Duration  232ms (transform 11ms, setup 0ms, collect 10ms, tests 5ms, environment 0ms, prepare 63ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:36 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 3ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  10:23:36
+
+   Duration  197ms (transform 16ms, setup 0ms, collect 8ms, tests 3ms, environment 0ms, prepare 50ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:38 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 3ms
+   × runs the challenge function 100 times
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:38
+
+   Duration  204ms (transform 13ms, setup 0ms, collect 7ms, tests 3ms, environment 0ms, prepare 47ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+Running Claude
+2024/08/22 10:23:40 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 4ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:23:40
+
+   Duration  227ms (transform 20ms, setup 0ms, collect 14ms, tests 4ms, environment 0ms, prepare 67ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: function challenge() {
+  return 42;
+}
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗ gt status
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗ go run cmd/main.go --output src/challenge.js --timeout 30 ./run
+Running Claude
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (1 test | 1 failed) 4ms
+   × runs the challenge function 100 times
+
+     → challenge is not a function
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+
+   Start at  10:26:36
+
+   Duration  224ms (transform 19ms, setup 0ms, collect 11ms, tests 4ms, environment 0ms, prepare 68ms)
+
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js > runs the challenge function 100 times
+
+TypeError: challenge is not a function
+ ❯ src/challenge.test.js:8:16
+
+      6| test("runs the challenge function 100 times", () => {
+      7|     for (let i = 0; i < 100; ++i) {
+      8|         expect(challenge()).toEqual(42);
+       |                ^
+      9|     }
+     10| })
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+2024/08/22 10:26:36 ERROR cmdr.Run err="exit status 1"
+Claude response: Here's the code to fix the error:
+
+```javascript
+function challenge() {
+  return 42;
+}
+
+export default challenge;
+```
+
+This defines a function named `challenge` that returns the value `42`. The function is then exported as the default export of the module, which should allow the test to pass.
+Running Claude
+2024/08/22 10:26:39 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+
+   Start at  10:26:39
+
+   Duration  218ms (transform 19ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 67ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+Error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+
+ ❯ TransformPluginContext._formatError node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:49159:41
+
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:49154:16
+
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:63888:14
+
+ ❯ PluginContainer.transform node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:49000:18
+
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:51822:27
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+import { describe, it, expect } from 'vitest';
+
+describe('sonnetChallenge', () => {
+  it('should return the correct sonnet', () => {
+    const sonnet = getSonnet();
+    expect(sonnet).toBeDefined();
+    expect(typeof sonnet).toBe('string');
+    expect(sonnet.split('\n').length).toBe(14);
+  });
+});
+
+function getSonnet() {
+  // Your code to generate the sonnet goes here
+  return 'This is a placeholder sonnet.';
+}
+
+export { getSonnet };
+```
+
+This code defines a test suite using `describe` and a single test case using `it` from the `vitest` library. The test case checks if the `getSonnet` function returns a defined value, if the returned value is a string, and if the string contains 14 lines (as a sonnet should).
+
+The `getSonnet` function is a placeholder that simply returns a string. You need to implement the actual logic to generate the sonnet within this function.
+
+Note that this code assumes that you have set up Vitest correctly in your project and that you have installed the necessary dependencies.
+Running Claude
+2024/08/22 10:26:48 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+
+   Start at  10:26:48
+
+   Duration  220ms (transform 16ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 72ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+Error: Expected ';', '}' or <eof>
+
+ ❯ getRollupError node_modules/rollup/dist/es/shared/parseAst.js:392:41
+ ❯ convertProgram node_modules/rollup/dist/es/shared/parseAst.js:1056:26
+ ❯ parseAstAsync node_modules/rollup/dist/es/shared/parseAst.js:1910:93
+ ❯ ssrTransformScript node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:52274:11
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/dep-BzOvws4Y.js:51872:72
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    'From fairest creatures we desire increase,',
+    'That thereby beauty\'s rose might never die,',
+    'But as the riper should by time decease,',
+    'His tender heir might bear his memory:',
+    'But thou contracted to thine own bright eyes,',
+    'Feed\'st thy light\'s flame with self-substantial fuel,',
+    'Making a famine where abundance lies,',
+    'Thy self thy foe, to thy sweet self too cruel:',
+    'Thou that art now the world\'s fresh ornament,',
+    'And only herald to the gaudy spring,',
+    'Within thine own bud buriest thy content,',
+    'And, tender churl, mak\'st waste in niggarding.',
+    'Pity the world, or else this glutton be,',
+    'To eat the world\'s due, by the grave and thee.'
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+2024/08/22 10:26:53 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  no tests
+
+   Start at  10:26:53
+
+   Duration  199ms (transform 22ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 57ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+2024/08/22 10:26:58 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  no tests
+
+   Start at  10:26:58
+
+   Duration  238ms (transform 14ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 70ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  no tests
+
+   Start at  10:27:03
+
+   Duration  230ms (transform 18ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 69ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+2024/08/22 10:27:03 ERROR cmdr.Run err="exit status 1"
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  no tests
+
+   Start at  10:27:08
+
+   Duration  207ms (transform 17ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 49ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+2024/08/22 10:27:08 ERROR cmdr.Run err="exit status 1"
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+2024/08/22 10:27:13 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+
+   Start at  10:27:13
+
+   Duration  233ms (transform 18ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 66ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+ ❯ src/challenge.test.js:2:31
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+2024/08/22 10:27:18 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+
+   Start at  10:27:17
+
+   Duration  194ms (transform 22ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 57ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+Claude response: ```javascript
+function getSonnetLines() {
+  return [
+    "From fairest creatures we desire increase,",
+    "That thereby beauty's rose might never die,",
+    "But as the riper should by time decease,",
+    "His tender heir might bear his memory:",
+    "But thou contracted to thine own bright eyes,",
+    "Feed'st thy light's flame with self-substantial fuel,",
+    "Making a famine where abundance lies,",
+    "Thy self thy foe, to thy sweet self too cruel:",
+    "Thou that art now the world's fresh ornament,",
+    "And only herald to the gaudy spring,",
+    "Within thine own bud buriest thy content,",
+    "And, tender churl, mak'st waste in niggarding:",
+    "Pity the world, or else this glutton be,",
+    "To eat the world's due, by the grave and thee."
+  ];
+}
+
+export default getSonnetLines;
+```
+Running Claude
+2024/08/22 10:27:22 ERROR cmdr.Run err="exit status 1"
+Test Runner(1):
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (0 test)
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  no tests
+
+   Start at  10:27:22
+
+   Duration  202ms (transform 17ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 53ms)
+
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+
+
+ FAIL  src/challenge.test.js [ src/challenge.test.js ]
+
+TypeError: "" is not a function
+
+ ❯ src/challenge.js:1:3
+
+      1| ```javascript
+       |   ^
+      2| function getSonnetLines() {
+      3|   return [
+
+ ❯ src/challenge.test.js:2:31
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+
+^Csignal: interrupt
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗ vim run2
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+➜  the-great-sonnet-test git:(08-22-potentially_final_product) ✗
+
+

@@ -160,12 +160,17 @@ func (c *Cmder) Run() error {
         go io.Copy(c.Err, stderr)
     }
 
-    if err := c.cmd.Run(); err != nil {
+    if err := c.cmd.Wait(); err != nil {
         if exitError, ok := err.(*exec.ExitError); ok {
             c.ExitCode(exitError.ExitCode())
+        } else {
+            //? error but not exit error?
+            c.ExitCode(-1)
         }
         return err
     }
+
+    c.ExitCode(0)
 
     return nil
 }
