@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-npx vitest run
+npx vitest run -t function-state
 

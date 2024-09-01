@@ -1,0 +1,259 @@
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 5ms
+
+   × runs the challenge function 100 times
+
+     → expected 69 to deeply equal 42
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:36:07
+
+   Duration  212ms (transform 21ms, setup 0ms, collect 14ms, tests 5ms, environment 0ms, prepare 44ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 7ms
+
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:36:17
+
+   Duration  223ms (transform 24ms, setup 0ms, collect 15ms, tests 7ms, environment 0ms, prepare 92ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 8ms
+   × runs the challenge function 100 times
+     → expected 69 to deeply equal 42
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:36:27
+   Duration  236ms (transform 12ms, setup 0ms, collect 12ms, tests 8ms, environment 0ms, prepare 66ms)
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 7ms
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:36:37
+
+   Duration  240ms (transform 21ms, setup 0ms, collect 16ms, tests 7ms, environment 0ms, prepare 69ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 8ms
+   × runs the challenge function 100 times
+
+     → expected 69 to deeply equal 42
+
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:36:49
+
+   Duration  242ms (transform 20ms, setup 0ms, collect 15ms, tests 8ms, environment 0ms, prepare 69ms)
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 4ms
+
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:02
+
+   Duration  224ms (transform 20ms, setup 0ms, collect 13ms, tests 4ms, environment 0ms, prepare 41ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 8ms
+
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:11
+
+   Duration  228ms (transform 13ms, setup 0ms, collect 11ms, tests 8ms, environment 0ms, prepare 60ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 8ms
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:21
+
+   Duration  236ms (transform 14ms, setup 0ms, collect 12ms, tests 8ms, environment 0ms, prepare 74ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 8ms
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:33
+
+   Duration  229ms (transform 17ms, setup 0ms, collect 13ms, tests 8ms, environment 0ms, prepare 70ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 4ms
+
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:43
+
+   Duration  206ms (transform 14ms, setup 0ms, collect 10ms, tests 4ms, environment 0ms, prepare 46ms)
+
+
+
+---------------------------------------
+
+
+ RUN  v2.0.5 /home/theprimeagen/personal/the-great-sonnet-test
+
+
+
+ ❯ src/challenge.test.js  (2 tests | 1 failed) 12ms
+
+   × runs the challenge function 100 times
+
+     → expected [Function] to deeply equal 69
+
+
+
+ Test Files  1 failed (1)
+
+      Tests  1 failed | 1 passed (2)
+
+   Start at  13:37:52
+
+   Duration  564ms (transform 48ms, setup 0ms, collect 35ms, tests 12ms, environment 0ms, prepare 123ms)
+
+

@@ -1,0 +1,25 @@
+export function challenge() {
+    let count = 0;
+    return function() {
+        if (count % 10 === 0) {
+            count++;
+            return 69;
+        } else if (count === 69) {
+            count++;
+            return () => "nice";
+        } else {
+            count++;
+            return 42;
+        }
+    };
+}
+
+export class Vector {
+    constructor(components) {
+        this.components = components;
+    }
+
+    add(other) {
+        return new Vector(this.components.map((value, index) => value + other.components[index]));
+    }
+}

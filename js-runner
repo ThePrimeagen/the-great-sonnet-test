@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
-go run cmd/main.go --tf src/challenge.test.js --lang JavaScript --output src/challenge.js --timeout 30 ./js
+if [ -z $1 ]; then
+    echo "you must provide the temp of the model"
+    exit 1
+fi
+
+if [ -z $2 ]; then
+    go run cmd/main.go --temp $1 --tf src/function-state.test.js --lang JavaScript --output src/challenge.js -- ./js
+else
+    go run cmd/main.go --model $2 --temp $1 --tf src/function-state.test.js --lang JavaScript --output src/challenge.js -- ./js
+fi
+
 
 
