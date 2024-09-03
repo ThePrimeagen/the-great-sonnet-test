@@ -148,11 +148,7 @@ func ReasonPrompt(params PromptParams) string {
     return prompt(ERROR_REASONING_PROMPT, params)
 }
 
-func CodeGenPrompt(params PromptParams) string {
-    params.Motivation = prompt(MY_PROMPT, params)
+func CodeGenPrompt(params PromptParams, promptString string) string {
+    params.Motivation = prompt(promptString, params)
     return prompt(CODE_GEN_PROMPT, params)
-}
-
-func TwitchCodeGenPrompt(params PromptParams) string {
-    return prompt(TWITCH_PROMPT, params)
 }

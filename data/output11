@@ -1,8 +1,0 @@
-export function challenge(i) {
-    if (i % 10 === 0) {
-        return 69;
-    } else {
-        return 42;
-    }
-}
----------------------------------------

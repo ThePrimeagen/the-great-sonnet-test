@@ -32,6 +32,7 @@ type Runner struct {
     Language string
     TestFile string
 
+    Prompt string
     Code string
     Error string
     Reasoning string
@@ -46,7 +47,7 @@ type RunnerParams struct {
     OutputFilePath string
 }
 
-func NewRunner(params RunnerParams) *Runner {
+func NewRunner(params RunnerParams, prompt string) *Runner {
     countBytes, err := os.ReadFile("./data/count")
     if err != nil {
         slog.Error("could not read data count", "err", err)
@@ -78,6 +79,7 @@ func NewRunner(params RunnerParams) *Runner {
         Error: "",
         Reasoning: "",
 
+        Prompt: prompt,
         Timeout: time.Second * 30,
         Name: params.Name,
         Args: params.Args,
@@ -133,24 +135,21 @@ func (r *Runner) Done() bool {
 }
 
 func (r *Runner) PrintResults() {
-    fmt.Printf("------- Runner -------\n")
-    fmt.Printf("Run Count: %d\n", r.RunCount)
-    success := "success"
-    if !r.Done() {
-        success = "failed"
+    if r.Done() {
+        fmt.Printf("[38;2;74;246;38mS");
+    } else {
+        fmt.Printf("[38;2;237;67;55mF");
     }
-    fmt.Printf("Status: %s\n", success)
 }
 
 func (r *Runner) RunTest(ctx context.Context) {
     wait := sync.WaitGroup{}
     wait.Add(1)
 
-    fmt.Printf("Running Test\n")
     res := cmd.NewCommandResults(ctx, r.Name, r.Args, &wait)
     wait.Wait()
 
-    fmt.Printf("Test Runner(%d): %s\n", res.Code, res.String())
+    slog.Info("RunTest", "code", res.Code, "result", res.String())
 
     r.Error = strings.Join(res.Stderr, "\n")
     r.TotalOutput = append(r.TotalOutput, strings.Join(res.Stdout, "\n"))
@@ -171,9 +170,8 @@ func (r *Runner) ToPromptParams() prompt.PromptParams {
 func (r *Runner) RunCodeGen(ctx context.Context, ai ai.AI) {
 
     out, err := ai.ReadWithTimeout(
-        prompt.CodeGenPrompt(r.ToPromptParams()), r.Timeout)
+        prompt.CodeGenPrompt(r.ToPromptParams(), r.Prompt), r.Timeout)
 
-    fmt.Printf("Claude response: %s\n", out)
     if err != nil {
         slog.Error("unable to receive code gen from claude", "err", err)
         os.Exit(1)
@@ -206,7 +204,7 @@ func (r *Runner) RunReasoning(ctx context.Context, ai ai.AI) {
         os.Exit(1)
     }
 
-    fmt.Printf("Claude Reasoning: %s\n", reasoning)
+    slog.Info("Run Reasoning", "reasoning", reasoning)
     r.Reasoning = reasoning
     r.TotalReasoning = append(r.TotalReasoning, reasoning)
 
