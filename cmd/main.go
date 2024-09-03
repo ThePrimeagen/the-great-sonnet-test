@@ -12,6 +12,18 @@ import (
 	"theprimeagen.tv/claude/pkg/runner"
 )
 
+func removeFileIfExists(filePath string) {
+    // Check if the file exists
+    if _, err := os.Stat(filePath); err == nil {
+        // File exists, so delete it
+        err := os.Remove(filePath)
+        if err != nil {
+            // Handle potential errors during removal
+            panic(err)
+        }
+    }
+}
+
 func main() {
     godotenv.Load()
 
@@ -48,6 +60,7 @@ func main() {
         log.Fatalf("error reading prompt file: %s\n", err)
     }
 
+    removeFileIfExists(logFile)
     file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
     if err != nil {
         log.Fatal(err)
@@ -77,7 +90,7 @@ func main() {
 
     aiModel.SetTemp(temp)
 
-    for range 20 {
+    for range 10 {
         runResults.RunCodeGen(ctx, aiModel)
         runResults.RunTest(ctx)
         runResults.PrintResults()

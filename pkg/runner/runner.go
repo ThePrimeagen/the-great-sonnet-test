@@ -135,11 +135,19 @@ func (r *Runner) Done() bool {
 }
 
 func (r *Runner) PrintResults() {
+    fmt.Printf("[2J");
+    fmt.Printf("[1;1H");
+    for range r.RunCount - 1 {
+        fmt.Printf("[38;2;237;67;55mF");
+    }
     if r.Done() {
         fmt.Printf("[38;2;74;246;38mS");
     } else {
         fmt.Printf("[38;2;237;67;55mF");
     }
+
+    fmt.Printf("[0m\n\nCode Provided for run %d\n", r.RunCount);
+    fmt.Println(r.Code);
 }
 
 func (r *Runner) RunTest(ctx context.Context) {
@@ -177,8 +185,10 @@ func (r *Runner) RunCodeGen(ctx context.Context, ai ai.AI) {
         os.Exit(1)
     }
 
-    if strings.HasPrefix(out, "```") {
-        out = out[1:len(out) - 1]
+    if strings.HasPrefix(out, "``") {
+        startIdx := strings.Index(out, "\n")
+        endIdx := strings.LastIndex(out, "`")
+        out = out[startIdx + 1:endIdx - 2]
     }
 
     r.Code = out
